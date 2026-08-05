@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      No permissions are declared here on purpose.
+
+      The SDK captures THIS app's own window only — never the launcher, never another app — so it
+      needs no screen-recording permission and shows no system "start recording" dialog. It reads
+      network state through ACCESS_NETWORK_STATE, which the SDK's own manifest contributes and the
+      merger adds for you; you do not repeat it here.
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:label="Snaply Example"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
