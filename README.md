@@ -1,7 +1,6 @@
 # Snaply Agent — Android example
 
-A complete, runnable integration of the [Snaply Agent](https://snaplyagent.com) Android SDK in a
-single Activity. Clone it, drop in your key, run it.
+A complete, runnable integration of the Snaply Agent Android SDK. Clone it, drop in your key, run it.
 
 The whole integration is in
 [`MainActivity.kt`](app/src/main/java/com/example/snaplyexample/MainActivity.kt) — around a dozen
@@ -94,6 +93,17 @@ Snaply.reset()
 
 Without it the device stays anonymous, and support finds it by the support code the person reads
 out — `Snaply.showSupportCode()`.
+
+## Errors worth handling
+
+Failures arrive on `SnaplyCallbacks.onError` as a `SnaplyException` carrying a `code`:
+
+| `code` | Meaning |
+|---|---|
+| `invalid_key` | The key is wrong, or still the placeholder |
+| `origin_mismatch` | This app's package name is not on the product's allowed list |
+| `quota_exceeded` | The workspace is out of screenshots for the cycle |
+
 
 ## Vendor ID
 
