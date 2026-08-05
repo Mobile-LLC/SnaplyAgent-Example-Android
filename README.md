@@ -48,7 +48,7 @@ Snaply.init(context = this, key = "snap_live_…")
 ## Redaction — read this before you ship
 
 **The SDK automatically redacts password fields and nothing else.** Everything else on screen is
-captured as-is. Mark anything a support agent should not read:
+captured as-is. Mark whatever you want hidden:
 
 ```kotlin
 cardNumberField.snaplyRedact()          // or: view.isSnaplyRedacted = true
