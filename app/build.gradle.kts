@@ -28,5 +28,5 @@ android {
 dependencies {
     // The whole integration. Resolved from Maven Central with no credentials — nothing else to add,
     // and no transitive setup for the host app to do.
-    implementation("com.snaplyagent:agent:2.23.0")
+    implementation("com.snaplyagent:agent:2.39.0")
 }

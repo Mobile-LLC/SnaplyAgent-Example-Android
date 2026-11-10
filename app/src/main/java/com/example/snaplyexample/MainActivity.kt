@@ -40,7 +40,7 @@ class MainActivity : Activity() {
             override fun onLiveEnded(session: LiveSession) = show("Live session ended.")
         })
 
-        // 2. Initialise with YOUR key from the Snaply console (Settings → SDK keys).
+        // 2. Initialise with YOUR key from the Snaply console (Products → your product → API key).
         //    `user` is optional: pass it when you know who this is, and call Snaply.identify(...)
         //    later if they sign in after launch. Without it the device stays anonymous and support
         //    finds it by the support code instead.

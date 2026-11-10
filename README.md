@@ -31,7 +31,7 @@ One dependency, from Maven Central. No credentials, no extra repository:
 
 ```kotlin
 dependencies {
-    implementation("com.snaplyagent:agent:2.22.0")
+    implementation("com.snaplyagent:agent:2.39.0")
 }
 ```
 
